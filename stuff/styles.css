@@ -172,4 +172,10 @@ body {
     opacity: 0.2;
   }
 }
+
+@media (max-width: 600px) {
+  .text {
+    margin-top: 50%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
