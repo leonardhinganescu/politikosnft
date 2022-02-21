@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --black-color: #0f0f0f;
+  --red-color: #ba1b2d;
+  --yellow-color: #fae6a7;
+  --navbar-height: 100px;
+  --border-size: 35px;
+  --transition-time: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--black-color);
+  border: var(--border-size) solid var(--red-color);
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo {
+  padding-top: 5%;
+  img {
+    width: 30vw;
+  }
+}
+
+.elements {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.text {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 8%;
+  margin-left: 5%;
+  z-index: 2;
+}
+.text1 {
+  font-size: 3.3vw;
+  font-weight: 300;
+  color: var(--yellow-color);
+}
+.text2 {
+  font-size: 2.2vw;
+  font-weight: 600;
+  color: white;
+}
+
+.basescu {
+  display: flex;
+  align-items: flex-end;
+  img {
+    height: 980px;
+    margin-bottom: -340px;
+    margin-right: 100px;
+  }
+}
+
+.oval {
+  width: 100%;
+  position: fixed;
+  bottom: -15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .elements {
+    flex-direction: column;
+  }
+  .logo {
+    padding-top: 15%;
+    img {
+      width: 60vw;
+    }
+  }
+  .text {
+    margin-top: 25%;
+  }
+  .text1,
+  .text2 {
+    text-align: center;
+  }
+  .text1 {
+    font-size: 8vw;
+  }
+  .text2 {
+    font-size: 5vw;
+  }
+  .basescu {
+    position: fixed;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-40%, 0);
+    opacity: 0.2;
+  }
+}
