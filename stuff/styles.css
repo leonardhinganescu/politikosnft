@@ -270,7 +270,7 @@ p {
 }
 
 .header {
-  background-image: url("stuff/img/headerss.svg");
+  background-image: url("/img/headerss.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100vw;
