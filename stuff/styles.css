@@ -871,7 +871,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   max-width: 250px;
-  height: 300px;
+  min-height: 300px;
 }
 
 .team-card:not(:last-child) {
@@ -934,6 +934,7 @@ p {
 
 .faq {
   padding-top: var(--navbar-height);
+  margin-bottom: 40px;
 }
 
 .faq h3 {
@@ -1265,6 +1266,7 @@ p {
     font-size: 30px;
     margin-top: -15px;
     line-height: 40px;
+    text-align: start;
   }
   .move-left {
     -webkit-box-align: start;
@@ -1277,9 +1279,41 @@ p {
   }
   .team-socials img {
     height: 40px;
+    width: 40px;
   }
   .faq {
     padding: var(--navbar-height) 30px;
+  }
+  .team-card {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    border: var(--border-size) solid var(--red-color);
+  }
+  .mint-btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .join-discord-btn {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .gallery p {
+    padding-right: 0px;
+  }
+  .show-text-scopul {
+    height: 800px;
+  }
+  .show-text-inceput {
+    height: 620px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
