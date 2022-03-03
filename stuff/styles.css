@@ -42,7 +42,7 @@ body {
 }
 
 h1 {
-  font-size: 49px;
+  font-size: 45px;
   font-family: var(--font-oswald);
   font-weight: 700;
   line-height: 109.7%;
@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 30px;
   font-family: var(--font-oswald);
   font-weight: 300;
   line-height: 109.7%;
@@ -62,7 +62,7 @@ h2 {
 h3 {
   font-family: var(--font-oswald);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 54px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -73,7 +73,7 @@ h3 {
 h4 {
   font-family: var(--font-oswald);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 54px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -82,7 +82,7 @@ h4 {
 h5 {
   font-family: var(--font-oswald);
   font-weight: 700;
-  font-size: 11px;
+  font-size: 10px;
   line-height: 54px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -91,7 +91,7 @@ h5 {
 
 p {
   font-family: inherit;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 140%;
   letter-spacing: -0.011em;
   color: var(--yellow-color);
@@ -181,7 +181,7 @@ p {
 
 .navbar-item a {
   font-family: var(--font-oswald);
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 500;
   color: var(--yellow-color);
   letter-spacing: 0.06em;
@@ -362,14 +362,14 @@ p {
 }
 
 .mint h1 {
-  font-size: 60px;
+  font-size: 45px;
   margin-top: 10%;
 }
 
 .mint p {
   color: var(--black-color);
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-bottom: 4  0px;
 }
 
 .mint .cards {
@@ -391,7 +391,7 @@ p {
 
 .market-btn {
   font-family: var(--font-oswald);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
   color: white;
@@ -412,13 +412,13 @@ p {
           align-items: center;
   margin-left: 30px;
   font-family: var(--font-oswald);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--black-color);
   text-transform: uppercase;
   padding: 0.5em 1.5em;
-  -webkit-box-shadow: inset 0px 0px 0px 7px var(--black-color);
-          box-shadow: inset 0px 0px 0px 7px var(--black-color);
+  -webkit-box-shadow: inset 0px 0px 0px 4px var(--black-color);
+          box-shadow: inset 0px 0px 0px 4px var(--black-color);
 }
 
 .join-discord-btn img {
@@ -484,7 +484,7 @@ p {
 }
 
 .show-text-inceput {
-  height: 400px;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -580,15 +580,14 @@ p {
 
 .pers-btn img {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
 
 .pers-btn p {
   color: white;
-  font-size: 15px;
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-right: 0px;
 }
 
@@ -608,13 +607,12 @@ p {
 
 .pers-mint-btn img {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
 
 .pers-mint-btn p {
   color: var(--yellow-color);
-  font-size: 15px;
   margin-top: 5px;
   margin-bottom: 20px;
   padding-right: 0px;
@@ -687,7 +685,7 @@ p {
 }
 
 .show-text-scopul {
-  height: 410px;
+  height: 315px;
   overflow: hidden;
 }
 
@@ -1017,7 +1015,6 @@ p {
 }
 
 .copy h5 {
-  font-size: 15px;
   color: white;
   letter-spacing: 0;
 }
@@ -1072,8 +1069,8 @@ p {
   }
   .pers-btn p,
   .pers-mint-btn p {
-    font-size: 18px;
-    margin-bottom: 35px;
+    font-size: 12px;
+    margin-bottom: 50px;
   }
   .show-text-scopul {
     height: 565px;
