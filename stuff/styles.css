@@ -573,6 +573,10 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .pers-list .row-right {
@@ -586,6 +590,10 @@ p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .pers-btn {
@@ -639,7 +647,7 @@ p {
 .pers-mint-btn p {
   color: var(--yellow-color);
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-right: 0px;
 }
 
@@ -1059,7 +1067,35 @@ p {
   height: 15px;
 }
 
-@media (min-width: 1900px) {
+.gallery-mobile-owl {
+  display: none;
+}
+
+.slider {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.slider .owl-item.active.center .slider-card {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.slider-card {
+  margin: 50px 15px 90px 15px;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  opacity: 0.5;
+  -webkit-transition: var(--transition-time) ease;
+  transition: var(--transition-time) ease;
+}
+
+.slider-card img {
+  border-radius: 5px 5px 0px 0px;
+}
+
+@media (min-width: 2100px) {
   h4 {
     font-size: 35px;
   }
@@ -1103,7 +1139,8 @@ p {
   }
   .pers-btn p,
   .pers-mint-btn p {
-    font-size: 12px;
+    margin-top: 10px;
+    font-size: 20px;
     margin-bottom: 50px;
   }
   .show-text-scopul {
@@ -1209,6 +1246,9 @@ p {
     margin-top: 150px;
     padding: 0 30px;
   }
+  .gallery-mobile-owl {
+    display: block;
+  }
   .box {
     padding: 30px;
     padding-top: 50px;
@@ -1286,12 +1326,29 @@ p {
   }
   .team-card {
     max-width: unset;
+    min-height: unset;
+  }
+  .team-socials {
+    margin-top: 15px;
+  }
+  .team-socials img {
+    height: 20px;
+    width: 20px;
+  }
+  .q-title h4 {
+    line-height: 27px;
+  }
+  .faq {
+    margin-bottom: 0;
   }
 }
 
 @media (max-width: 500px) {
   body {
     border: var(--border-size) solid var(--red-color);
+  }
+  h1 {
+    font-size: 35px;
   }
   .mint-btns {
     -webkit-box-orient: vertical;
@@ -1310,10 +1367,22 @@ p {
     padding-right: 0px;
   }
   .show-text-scopul {
-    height: 800px;
+    height: 550px;
   }
   .show-text-inceput {
-    height: 620px;
+    height: 485px;
+  }
+  .roadmap-card {
+    padding-left: 45px;
+  }
+  .footer-logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-socials {
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

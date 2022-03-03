@@ -492,11 +492,15 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    height: 100%;
+    justify-content: space-between;
   }
   .row-right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    height: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -534,7 +538,7 @@ p {
   p {
     color: var(--yellow-color);
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-right: 0px;
   }
 }
@@ -857,9 +861,36 @@ p {
   }
 }
 
-//       MEDIA QUERYS
+.gallery-mobile-owl {
+  display: none;
+}
 
-@media (min-width: 1900px) {
+.slider {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.slider-card {
+  margin: 50px 15px 90px 15px;
+  transform: scale(0.75);
+  opacity: 0.5;
+  transition: var(--transition-time) ease;
+
+  img {
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+
+
+
+//  ============================================ MEDIA QUERYS =====================================================
+
+@media (min-width: 2100px) {
   h4 {
     font-size: 35px;
   }
@@ -914,7 +945,8 @@ p {
       width: 135px;
     }
     p {
-      font-size: 12px;
+      margin-top: 10px;
+      font-size: 20px;
       margin-bottom: 50px;
     }
   }
@@ -1035,6 +1067,10 @@ p {
     margin-top: 150px;
     padding: 0 30px;
   }
+  
+  .gallery-mobile-owl {
+    display: block;
+  }
 
   .box {
     padding: 30px;
@@ -1116,12 +1152,34 @@ p {
 
   .team-card {
     max-width: unset;
+    min-height: unset;
+  }
+
+  .team-socials {
+    margin-top: 15px;
+
+    img {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  .q-title h4 {
+    line-height: 27px;
+  }
+
+  .faq {
+    margin-bottom: 0;
   }
 }
 
 @media (max-width: 500px) {
   body {
     border: var(--border-size) solid var(--red-color);
+  }
+
+  h1 {
+    font-size: 35px;
   }
 
   .mint-btns {
@@ -1139,10 +1197,20 @@ p {
   }
 
   .show-text-scopul {
-    height: 800px;
+    height: 550px;
   }
-  
+
   .show-text-inceput {
-    height: 620px;
+    height: 485px;
+  }
+
+  .roadmap-card {
+    padding-left: 45px;
+  }
+  .footer-logo {
+    flex-direction: column;
+  }
+  .footer-socials {
+    margin-top: 15px;
   }
 }

@@ -153,3 +153,21 @@ window.onscroll = () => {
     }
   });
 };
+
+
+// SLIDER MOBILE GALLERY
+
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:-50,
+  responsiveClass:true,
+  center:true,
+  responsive:{
+      0:{
+          items:3,
+      },
+      700:{
+          items:5,
+      }
+  }
+})
