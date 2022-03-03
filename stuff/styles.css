@@ -270,7 +270,7 @@ p {
 }
 
 .header {
-  background-image: url("headerss.svg");
+  background-image: url("img/header_silueta.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100vw;
@@ -631,6 +631,10 @@ p {
   opacity: 100%;
 }
 
+.change-img {
+  background-color: var(--red-color);
+}
+
 .gallery-imgs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -645,10 +649,14 @@ p {
 
 .gallery-img {
   margin-bottom: 20px;
+  padding-right: 20px;
 }
 
 .gallery-img img {
-  width: 90%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .scopul {
@@ -1121,7 +1129,7 @@ p {
   }
   .mint {
     padding: 30px;
-    background-image: url("/stuff/img//header_single.svg");
+    background-image: url("/stuff/img/header_single.svg");
     background-repeat: no-repeat;
     background-position: 75% bottom;
     background-size: 50%;

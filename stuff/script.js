@@ -94,27 +94,24 @@ pers_icons.forEach((element) => {
 
     if (element.classList.contains("dragnea")) {
       gallery_imgs.forEach((element2) => {
-        console.log(element2);
         element2.src = "stuff/img/hide-pers.svg";
       });
     } else if (element.classList.contains("vadim")) {
       gallery_imgs.forEach((element2) => {
-        console.log(element2);
         element2.src = "stuff/img/hide-pers.svg";
       });
     } else if (element.classList.contains("ceausescu")) {
+      let i = 1;
       gallery_imgs.forEach((element2) => {
-        console.log(element2);
-        element2.src = "stuff/img/hide-pers.svg";
+        element2.src = "stuff/img/ceausescu/Ceausescul" + i.toString() + ".png";
+        i = i + 1;
       });
     } else if (element.classList.contains("basescu")) {
       gallery_imgs.forEach((element2) => {
-        console.log(element2);
         element2.src = "stuff/img/hide-pers.svg";
       });
     } else if (element.classList.contains("iohannis")) {
       gallery_imgs.forEach((element2) => {
-        console.log(element2);
         element2.src = "stuff/img/hide-pers.svg";
       });
     }
