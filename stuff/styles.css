@@ -1365,6 +1365,10 @@ p {
   h1 {
     font-size: 35px;
   }
+  .mint {
+    background-position: 100% 50%;
+    background-size: 80%;
+  }
   .mint-btns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
