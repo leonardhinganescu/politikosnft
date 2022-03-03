@@ -1225,6 +1225,8 @@ p {
     background-repeat: no-repeat;
     background-position: 75% bottom;
     background-size: 50%;
+    min-height: 525px;
+    margin-bottom: -80px;
   }
   .mint .col2,
   .mint .col4,
@@ -1260,6 +1262,7 @@ p {
   }
   .gallery-mobile-owl {
     display: block;
+    margin-top: -40px;
   }
   .box {
     padding: 30px;
@@ -1270,7 +1273,7 @@ p {
             box-shadow: none;
   }
   .scopul {
-    margin-top: 80px;
+    margin-top: 0px;
     margin-bottom: 0;
   }
   .roadmap {

@@ -159,7 +159,7 @@ window.onscroll = () => {
 
 $('.owl-carousel').owlCarousel({
   loop:true,
-  margin:10,
+  margin:100,
   responsiveClass:true,
   center:true,
   responsive:{

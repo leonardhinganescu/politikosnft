@@ -1038,6 +1038,8 @@ p {
     background-repeat: no-repeat;
     background-position: 75% bottom;
     background-size: 50%;
+    min-height: 525px;
+    margin-bottom: -80px;
 
     .col2,
     .col4,
@@ -1076,6 +1078,7 @@ p {
 
   .gallery-mobile-owl {
     display: block;
+    margin-top: -40px;
   }
 
   .box {
@@ -1088,7 +1091,7 @@ p {
   }
 
   .scopul {
-    margin-top: 80px;
+    margin-top: 0px;
     margin-bottom: 0;
   }
 
