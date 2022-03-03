@@ -873,6 +873,7 @@ p {
 .slider .owl-item.active.center .slider-card {
   transform: scale(1);
   opacity: 1;
+  z-index: 10 !important;
 }
 
 .slider-card {
@@ -880,13 +881,18 @@ p {
   transform: scale(0.75);
   opacity: 0.5;
   transition: var(--transition-time) ease;
-
-  img {
-    border-radius: 5px 5px 0px 0px;
-  }
+  display: flex;
+  justify-content: center;
 }
 
+.owl-carousel .owl-item img {
+  width: unset !important;
+  height: 400px;
+}
 
+.slider .owl-item.active.center {
+  z-index: 3;
+}
 
 //  ============================================ MEDIA QUERYS =====================================================
 
@@ -1028,7 +1034,7 @@ p {
 
   .mint {
     padding: 30px;
-    background-image: url("/stuff/img/header_single.svg");
+    background-image: url("img/header_single.svg");
     background-repeat: no-repeat;
     background-position: 75% bottom;
     background-size: 50%;
@@ -1067,7 +1073,7 @@ p {
     margin-top: 150px;
     padding: 0 30px;
   }
-  
+
   .gallery-mobile-owl {
     display: block;
   }
