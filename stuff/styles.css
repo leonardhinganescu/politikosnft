@@ -270,7 +270,7 @@ p {
 }
 
 .header {
-  background-image: url("/stuff/headerss.svg");
+  background-image: url("headerss.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100vw;
@@ -717,7 +717,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   padding-top: var(--navbar-height);
-  background-image: url("/stuff/img/icons/roadmap-line.svg");
+  background-image: url("img/icons/roadmap-line.svg");
   background-repeat: no-repeat;
   background-position: center 450px;
   padding-bottom: 40px;
