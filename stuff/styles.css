@@ -42,7 +42,7 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 49px;
   font-family: var(--font-oswald);
   font-weight: 700;
   line-height: 109.7%;
@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 34px;
   font-family: var(--font-oswald);
   font-weight: 300;
   line-height: 109.7%;
@@ -62,7 +62,7 @@ h2 {
 h3 {
   font-family: var(--font-oswald);
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 54px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -73,7 +73,7 @@ h3 {
 h4 {
   font-family: var(--font-oswald);
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 54px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -82,7 +82,7 @@ h4 {
 h5 {
   font-family: var(--font-oswald);
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 54px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -91,7 +91,7 @@ h5 {
 
 p {
   font-family: inherit;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 140%;
   letter-spacing: -0.011em;
   color: var(--yellow-color);
@@ -293,7 +293,7 @@ p {
 }
 
 .header ul {
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .container {
@@ -356,6 +356,9 @@ p {
   display: flex;
   position: relative;
   min-height: 600px;
+  margin-left: -1px;
+  margin-top: -1px;
+  width: 101%;
 }
 
 .mint h1 {
@@ -450,6 +453,9 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: -1px;
+  margin-top: -1px;
+  width: 101%;
 }
 
 .cum_a_inceput h1 {
@@ -763,9 +769,11 @@ p {
 }
 
 .beneficii {
-  width: 100%;
   background-color: var(--red-color);
   padding: var(--navbar-height) 0;
+  margin-left: -1px;
+  margin-top: -1px;
+  width: 101%;
 }
 
 .beneficii h1 {
@@ -945,7 +953,6 @@ p {
 }
 
 .footer {
-  width: 100%;
   background-color: var(--red-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -954,6 +961,9 @@ p {
       flex-wrap: wrap;
   margin-bottom: -20px;
   padding: 0 var(--border-size);
+  margin-left: -1px;
+  margin-top: -1px;
+  width: 101%;
 }
 
 .footer-logo {
