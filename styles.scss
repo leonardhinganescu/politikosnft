@@ -331,7 +331,7 @@ p {
   position: relative;
   min-height: 600px;
   margin-left: -1px;
-  margin-top: -1px;
+  margin-top: -5px;
   width: 101%;
   z-index: -1;
 
@@ -710,14 +710,20 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 250px;
+  height: 300px;
+  
 
   &:not(:last-child) {
     margin-right: 20px;
   }
 
   img {
-    width: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: var(--transition-time) ease;
+
 
     &:hover {
       box-shadow: 5px 5px var(--red-color);
@@ -731,8 +737,10 @@ p {
   h4 {
     color: var(--yellow-color);
     font-weight: 300;
-    margin-top: -25px;
+    margin-top: -20px;
     letter-spacing: 0.08em;
+    line-height: 30px;
+    text-align: center;
   }
 }
 
@@ -793,10 +801,8 @@ p {
   }
 }
 
-.show-text {
-  p {
-    height: 50px;
-  }
+.show-text p {
+  height: 40px;
 }
 
 .footer {
@@ -931,6 +937,9 @@ p {
 
     h4 {
       margin-top: -15px;
+      line-height: 30px;
+      text-align: center;
+
     }
   }
   .team-socials img {
@@ -946,6 +955,8 @@ p {
   :root {
     --border-size: 20px;
   }
+
+  
 
   .col1,
   .col10,
