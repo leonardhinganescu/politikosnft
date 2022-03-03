@@ -4,7 +4,7 @@
   --black-color: #1e1e1e;
   --red-color: #ba1b2d;
   --yellow-color: #fae6a7;
-  --navbar-height: 100px;
+  --navbar-height: 80px;
   --border-size: 30px;
   --transition-time: 0.3s;
   --font-roboto: "Roboto Mono", monospace;
@@ -143,7 +143,7 @@ p {
 }
 
 .navbar-logo img {
-  width: 180px;
+  width: 150px;
   height: auto;
 }
 
@@ -359,6 +359,7 @@ p {
   margin-left: -1px;
   margin-top: -1px;
   width: 101%;
+  z-index: -1;
 }
 
 .mint h1 {
@@ -369,7 +370,7 @@ p {
 .mint p {
   color: var(--black-color);
   margin-top: 20px;
-  margin-bottom: 4  0px;
+  margin-bottom: 40px;
 }
 
 .mint .cards {
@@ -525,6 +526,12 @@ p {
   font-size: 15px;
   margin-bottom: 40px;
   padding-right: 50px;
+}
+
+.gallery-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .pers-list {
@@ -978,16 +985,16 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 40px 0;
+  margin: 15px 0;
 }
 
 .footer-logo img {
-  width: 180px;
+  width: 130px;
   height: auto;
 }
 
 .footer-socials a img {
-  height: 25px;
+  height: 20px;
   width: auto;
   margin-right: 10px;
 }
@@ -1015,14 +1022,15 @@ p {
 }
 
 .copy h5 {
+  font-size: 13px;
   color: white;
   letter-spacing: 0;
+  line-height: 20px;
 }
 
 .copy img {
   margin: 0 5px;
-  margin-top: 2px;
-  height: 20px;
+  height: 15px;
 }
 
 @media (min-width: 1900px) {
