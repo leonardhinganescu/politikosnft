@@ -711,6 +711,10 @@ p {
   flex-direction: row;
   align-items: center;
   margin-bottom: 10px;
+
+  a {
+    color: var(--red-color);
+  }
 }
 
 .legend-color {
@@ -739,14 +743,18 @@ p {
 }
 
 .chart-container {
-  // width: 45%;
-  // display: flex;
-  // align-items: flex-start;
-  // flex-direction: column;
-
   h3 {
     color: white;
     margin-bottom: -70px;
+  }
+}
+
+.explicatie-toko {
+  margin-bottom: 40px;
+  width: 80%;
+
+  p {
+    text-align: center;
   }
 }
 
@@ -868,6 +876,10 @@ p {
     color: white;
     margin-bottom: 40px;
   }
+
+  a {
+    color: var(--red-color);
+  }
 }
 
 .q-card {
@@ -897,7 +909,8 @@ p {
 }
 
 .show-text p {
-  height: 40px;
+  //height: 65px;
+  height: auto;
 }
 
 .footer {

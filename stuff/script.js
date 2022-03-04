@@ -122,13 +122,38 @@ pers_icons.forEach((element) => {
 
 // FAQ SHOW ANSWER
 
-let q_title = document.querySelectorAll(".q-title");
+let qTitle = document.querySelectorAll(".q-title");
+let qCards = document.querySelectorAll(".q-card");
+let qAnswers = document.querySelectorAll(".q-answer");
+let qHeights = [0, 0, 0, 0, 0, 0, 0];
 
-q_title.forEach((question) => {
+function getHeights() {
+  qAnswers.forEach((ans, i) => {
+    qHeights[i] = ans.scrollHeight;
+  });
+
+  console.log(qHeights);
+
+  qCards.forEach((card) => {
+    card.classList.remove("show-text");
+  });
+}
+
+getHeights();
+
+qTitle.forEach((question, i) => {
   question.addEventListener("click", function () {
     question.parentElement.classList.toggle("show-text");
-    if (question.parentElement.classList.contains("show-text")) question.firstElementChild.style.transform = "rotate(90deg)";
-    else question.firstElementChild.style.transform = "rotate(0deg)";
+
+    question.parentElement.children[1].style.height = qHeights[i].toString() + "px";
+
+    if (question.parentElement.classList.contains("show-text")) {
+      question.firstElementChild.style.transform = "rotate(90deg)";
+      question.parentElement.children[1].style.height = qHeights[i].toString() + "px";
+    } else {
+      question.firstElementChild.style.transform = "rotate(0deg)";
+      question.parentElement.children[1].style.height = "0px";
+    }
   });
 });
 

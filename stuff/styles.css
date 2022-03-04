@@ -882,6 +882,10 @@ p {
   margin-bottom: 10px;
 }
 
+.legend-item a {
+  color: var(--red-color);
+}
+
 .legend-color {
   height: 0.8em;
   width: 10px;
@@ -915,6 +919,15 @@ p {
 .chart-container h3 {
   color: white;
   margin-bottom: -70px;
+}
+
+.explicatie-toko {
+  margin-bottom: 40px;
+  width: 80%;
+}
+
+.explicatie-toko p {
+  text-align: center;
 }
 
 .beneficii {
@@ -1072,6 +1085,10 @@ p {
   margin-bottom: 40px;
 }
 
+.faq a {
+  color: var(--red-color);
+}
+
 .q-card {
   margin-bottom: 40px;
 }
@@ -1106,7 +1123,7 @@ p {
 }
 
 .show-text p {
-  height: 40px;
+  height: auto;
 }
 
 .footer {
