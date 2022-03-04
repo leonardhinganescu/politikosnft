@@ -282,6 +282,9 @@ p {
   width: 25px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.navbar-lang a img:hover {
   -webkit-box-shadow: 2px 2px var(--black-color);
           box-shadow: 2px 2px var(--black-color);
 }

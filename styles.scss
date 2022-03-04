@@ -258,7 +258,9 @@ p {
     height: 15px;
     width: 25px;
     object-fit: cover;
-    box-shadow: 2px 2px var(--black-color);
+    &:hover {
+      box-shadow: 2px 2px var(--black-color);
+    }
   }
 }
 
