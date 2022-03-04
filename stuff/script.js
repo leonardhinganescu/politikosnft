@@ -141,12 +141,14 @@ window.onscroll = () => {
     let sectionTop = section.offsetTop - 200;
     if (scrollY >= sectionTop) {
       current = section.getAttribute("id");
+      console.log(section);
     }
   });
 
   links.forEach((li) => {
     li.classList.remove("active");
     if (li.href.includes(current)) {
+      console.log(current);
       li.classList.add("active");
     }
   });
@@ -179,7 +181,6 @@ Chart.defaults.font.size = 15;
 Chart.defaults.color = "#fff";
 Chart.defaults.font.weight = 300;
 
-//Chart.defaults.plugins.legend = 'left';
 
 const myChart1 = new Chart(ctx, {
   type: "pie",
