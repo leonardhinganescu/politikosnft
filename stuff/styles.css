@@ -1518,6 +1518,17 @@ p {
   .legend {
     margin-bottom: 20px;
   }
+  .chart-container {
+    width: 100%;
+  }
+  .team-card h4 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .team-card h5 {
+    line-height: 15px;
+    margin-bottom: 20px;
+  }
   .footer-logo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
