@@ -59,6 +59,9 @@
               <a href="#beneficii" class="navbar-link">Beneficii</a>
             </li>
             <li class="navbar-item">
+              <a href="#tokonomics" class="navbar-link">Tokonomics</a>
+            </li>
+            <li class="navbar-item">
               <a href="#team" class="navbar-link">Echipă</a>
             </li>
             <li class="navbar-item">
@@ -107,6 +110,9 @@
         </li>
         <li class="navbar-item">
           <a href="#beneficii" class="header-link">Beneficii</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#tokonomics" class="header-link">Tokonomics</a>
         </li>
         <li class="navbar-item">
           <a href="#team" class="header-link">Echipă</a>
@@ -236,7 +242,7 @@
         <div class="col2 empty"></div>
       </section>
 
-      <section class="gallery-mobile-owl">
+      <section class="gallery-mobile-owl" id="despre">
         <div class="slider">
           <div class="owl-carousel">
             <div class="slider-card">
@@ -483,6 +489,73 @@
         </div>
         <div class="col2 empty"></div>
       </section>
+      
+      <section class="tokonomics flex" id="tokonomics">
+        <div class="col3 empty"></div>
+        <div class="col6 flex">
+          <h1>Tokonomics</h1>
+          <div class="charts">
+            <div class="chart">
+              <div class="legend">
+                <h3>Politikos</h3>
+                <div class="legend-item">
+                  <div class="legend-color legend-red"></div>
+                  <p>Team + advisors/parteneri</p>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color legend-blue"></div>
+                  <p>Dezvoltare Școalamaibună.ro</p>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color legend-orange"></div>
+                  <p>Hub</p>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color legend-purple"></div>
+                  <p>Airdrops Comunitate/Giveaways</p>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color legend-brown"></div>
+                  <p>Marketing</p>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color legend-green"></div>
+                  <p>Parteneriate Strategice</p>
+                </div>
+              </div>
+              <div class="chart-container">
+                <canvas id="politikosChart" width="400" height="400"></canvas>
+              </div>
+            </div>
+
+            <div class="chart">
+              <div class="chart-container">
+                <canvas id="scmbChart" width="400" height="400"></canvas>
+              </div>
+              <div class="legend">
+                <h3>Școala mai bună</h3>
+                <div class="legend-item">
+                  <div class="legend-color legend-red"></div>
+                  <p>Producție cursuri </p>
+                </div>
+                <div class="legend-item ">
+                  <div class="legend-color legend-orange"></div>
+                  <p>Achiziții</p>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color legend-green"></div>
+                  <p>Marketing</p>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color legend-brown"></div>
+                  <p>Echipă SCMB + parteneriate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col3 empty"></div>
+      </section>
 
       <section class="team flex" id="team">
         <div class="col2 empty"></div>
@@ -641,6 +714,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     <script src="stuff/script.js"></script>
   </body>
 </html>

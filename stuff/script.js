@@ -132,7 +132,6 @@ q_title.forEach((question) => {
 
 let sections = document.querySelectorAll("section");
 
-
 // COLOR NAV TEXT WHEN ON SECTION
 
 window.onscroll = () => {
@@ -149,25 +148,120 @@ window.onscroll = () => {
     li.classList.remove("active");
     if (li.href.includes(current)) {
       li.classList.add("active");
-      
     }
   });
 };
 
-
 // SLIDER MOBILE GALLERY
 
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:100,
-  responsiveClass:true,
-  center:true,
-  responsive:{
-      0:{
-          items:3,
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 100,
+  responsiveClass: true,
+  center: true,
+  responsive: {
+    0: {
+      items: 3,
+    },
+    700: {
+      items: 5,
+    },
+  },
+});
+
+// TOKONOMICS
+
+const ctx = document.getElementById("politikosChart").getContext("2d");
+const cty = document.getElementById("scmbChart").getContext("2d");
+
+Chart.defaults.font.family = "Oswald";
+Chart.defaults.font.size = 15;
+Chart.defaults.color = "#fff";
+Chart.defaults.font.weight = 300;
+
+//Chart.defaults.plugins.legend = 'left';
+
+const myChart1 = new Chart(ctx, {
+  type: "pie",
+  data: {
+    labels: [
+      "Team + advisors/parteneri",
+      "Hub",
+      "Airdrops Comunitate/Giveaways",
+      "Marketing",
+      "Parteneriate Strategice",
+      "Dezvoltare Școalamaibună.ro",
+    ],
+    datasets: [
+      {
+        label: "Procentaj",
+        data: [18, 10, 10, 6, 6, 50],
+        backgroundColor: ["#BA1B2D", "#E3A443", "#363457", "#93755B", "#387780", "#006BA6"],
+        borderWidth: 5,
+        borderColor: "#1e1e1e",
+        hoverOffset: 6,
       },
-      700:{
-          items:5,
-      }
-  }
-})
+    ],
+  },
+  plugins: [ChartDataLabels],
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false,
+      },
+      tooltip: {
+        enabled: false,
+      },
+      datalabels: {
+        color: "#1e1e1e",
+        anchor: "center",
+        align: "end",
+        offset: 25,
+        font: { family: "Oswald", weight: 600, size: 15 },
+        formatter: function (value, context) {
+          return value + "%";
+        },
+      },
+    },
+  },
+});
+
+const myChart2 = new Chart(cty, {
+  type: "pie",
+  data: {
+    labels: ["Producție cursuri", "Achiziții", "Echipă + parteneriate", "Marketing"],
+    datasets: [
+      {
+        label: "Procentaj",
+        data: [50, 15, 20, 15],
+        backgroundColor: ["#BA1B2D", "#E3A443", "#93755B", "#387780", "#006BA6", "#363457"],
+        borderWidth: 5,
+        borderColor: "#1e1e1e",
+        hoverOffset: 6,
+      },
+    ],
+  },
+  plugins: [ChartDataLabels],
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false,
+      },
+      tooltip: {
+        enabled: false,
+      },
+      datalabels: {
+        color: "#1e1e1e",
+        anchor: "center",
+        align: "end",
+        offset: 25,
+        font: { family: "Oswald", weight: 600, size: 15 },
+        formatter: function (value, context) {
+          return value + "%";
+        },
+      },
+    },
+  },
+});

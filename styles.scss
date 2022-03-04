@@ -658,6 +658,83 @@ p {
   }
 }
 
+.tokonomics {
+  width: 100%;
+  padding-top: var(--navbar-height);
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.chart {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+
+  h3 {
+    color: white;
+    margin-bottom: 10px;
+  }
+}
+
+.legend-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legend-color {
+  height: 0.8em;
+  width: 10px;
+  margin-right: 5px;
+
+  &.legend-red {
+    background-color: #ba1b2d;
+  }
+  &.legend-orange {
+    background-color: #e3a443;
+  }
+  &.legend-brown {
+    background-color: #93755b;
+  }
+  &.legend-green {
+    background-color: #387780;
+  }
+  &.legend-blue {
+    background-color: #006ba6;
+  }
+  &.legend-purple {
+    background-color: #363457;
+  }
+}
+
+.chart-container {
+  // width: 45%;
+  // display: flex;
+  // align-items: flex-start;
+  // flex-direction: column;
+
+  h3 {
+    color: white;
+    margin-bottom: -70px;
+  }
+}
+
 .beneficii {
   background-color: var(--red-color);
   padding: var(--navbar-height) 0;
@@ -1109,6 +1186,10 @@ p {
     padding: var(--navbar-height) 30px;
   }
 
+  .tokonomics {
+    padding: var(--navbar-height) 30px 0 30px;
+  }
+
   .row-beneficiu {
     flex-direction: column;
     margin-bottom: 0px !important;
@@ -1221,9 +1302,24 @@ p {
   .roadmap-card {
     padding-left: 45px;
   }
+
+  .chart {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:last-child {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .legend {
+    margin-bottom: 20px;
+  }
+
   .footer-logo {
     flex-direction: column;
   }
+
   .footer-socials {
     margin-top: 15px;
   }
