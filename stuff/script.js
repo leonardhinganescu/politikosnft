@@ -179,7 +179,6 @@ Chart.defaults.font.size = 15;
 Chart.defaults.color = "#fff";
 Chart.defaults.font.weight = 300;
 
-
 const myChart1 = new Chart(ctx, {
   type: "pie",
   data: {
