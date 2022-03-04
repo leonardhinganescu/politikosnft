@@ -141,14 +141,12 @@ window.onscroll = () => {
     let sectionTop = section.offsetTop - 200;
     if (scrollY >= sectionTop) {
       current = section.getAttribute("id");
-      console.log(section);
     }
   });
 
   links.forEach((li) => {
     li.classList.remove("active");
     if (li.href.includes(current)) {
-      console.log(current);
       li.classList.add("active");
     }
   });
