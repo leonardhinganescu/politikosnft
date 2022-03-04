@@ -1364,6 +1364,9 @@ p {
   .navbar-container {
     opacity: 1;
   }
+  .navbar-lang a:first-child {
+    margin-right: 30px;
+  }
   .collapse {
     display: none;
   }
