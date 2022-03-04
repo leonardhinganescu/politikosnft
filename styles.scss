@@ -179,6 +179,9 @@ p {
     color: var(--yellow-color);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    &:hover {
+      text-shadow: 2px 2px var(--black-color);
+    }
   }
 
   &:last-child {
@@ -248,6 +251,17 @@ p {
   bottom: 10%;
 }
 
+.navbar-lang {
+  padding: 3px 15px;
+
+  a img {
+    height: 15px;
+    width: 25px;
+    object-fit: cover;
+    box-shadow: 2px 2px var(--black-color);
+  }
+}
+
 //       HEADER
 
 .header {
@@ -267,6 +281,12 @@ p {
 
   ul {
     margin-top: 3%;
+  }
+}
+
+.header-link {
+  &:hover {
+    text-shadow: 2px 2px var(--red-color) !important;
   }
 }
 
@@ -330,10 +350,10 @@ p {
   display: flex;
   position: relative;
   min-height: 600px;
-  margin-left: -1px;
+  //margin-left: -1px;
   margin-top: -5px;
-  width: 101%;
-  z-index: -1;
+  width: 100%;
+  //z-index: -1;
 
   h1 {
     font-size: 45px;
