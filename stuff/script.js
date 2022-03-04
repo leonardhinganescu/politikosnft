@@ -111,8 +111,10 @@ pers_icons.forEach((element) => {
         element2.src = "stuff/img/hide-pers.svg";
       });
     } else if (element.classList.contains("iohannis")) {
+      let i = 1;
       gallery_imgs.forEach((element2) => {
-        element2.src = "stuff/img/hide-pers.svg";
+        element2.src = "stuff/img/iohannis/Iohanis" + i.toString() + ".png";
+        i = i + 1;
       });
     }
   });
