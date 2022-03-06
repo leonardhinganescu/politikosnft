@@ -47,37 +47,90 @@ document.addEventListener("scroll", function () {
   }
 });
 
-// SHOW/HIDE TEXT CUM A INCEPUT
+// GET HEIGHTS FOR ACCORDIONS
 
 let text1 = document.querySelector(".hide-text-inceput");
+let text2 = document.querySelector(".hide-text-scopul");
+let text1H, text2H;
+
+let qAnswers = document.querySelectorAll(".q-answer");
+let qCards = document.querySelectorAll(".q-card");
+let qHeights = [0, 0, 0, 0, 0, 0, 0];
+
+function getHeights() {
+  text1H = text1.scrollHeight;
+  text1.classList.remove("show-text-inceput");
+
+  text2H = text2.scrollHeight;
+  text2.classList.remove("show-text-scopul");
+
+  qAnswers.forEach((ans, i) => {
+    qHeights[i] = ans.scrollHeight;
+  });
+  qCards.forEach((card) => {
+    card.classList.remove("show-text");
+  });
+}
+
+getHeights();
+
+// SHOW/HIDE TEXT CUM A INCEPUT
+
 let hide_text_btn1 = document.querySelector(".show-text-btn-inceput");
 
 hide_text_btn1.addEventListener("click", function () {
   text1.classList.toggle("show-text-inceput");
+  text1.style.height = text1H.toString() + "px";
 
   let display_text = hide_text_btn1.innerText;
-  if (display_text == "Citește mai mult") {
-    hide_text_btn1.innerText = "Ascunde";
+  if (hide_text_btn1.classList.contains("eng")) {
+    if (display_text == "Read more") {
+      hide_text_btn1.innerText = "Hide";
+      hide_text_btn1.style.marginTop = "30px";
+    } else {
+      hide_text_btn1.innerText = "Read more";
+      text1.style.height = "0px";
+      hide_text_btn1.style.marginTop = "10px";
+    }
   } else {
-    hide_text_btn1.innerText = "Citește mai mult";
+    if (display_text == "Citește mai mult") {
+      hide_text_btn1.innerText = "Ascunde";
+      hide_text_btn1.style.marginTop = "30px";
+    } else {
+      hide_text_btn1.innerText = "Citește mai mult";
+      text1.style.height = "0px";
+      hide_text_btn1.style.marginTop = "10px";
+    }
   }
 });
 
 // SHOW/HIDE TEXT SCOPUL
 
-let text2 = document.querySelector(".hide-text-scopul");
 let hide_text_btn2 = document.querySelector(".show-text-btn-scopul");
-let section_scopul = document.querySelector(".scopul");
 
 hide_text_btn2.addEventListener("click", function () {
   text2.classList.toggle("show-text-scopul");
-  section_scopul.classList.toggle("extins");
+  text2.style.height = text2H.toString() + "px";
 
   let display_text = hide_text_btn2.innerText;
-  if (display_text == "Citește mai mult") {
-    hide_text_btn2.innerText = "Ascunde";
+  if (hide_text_btn2.classList.contains("eng")) {
+    if (display_text == "Read more") {
+      hide_text_btn2.innerText = "Hide";
+      hide_text_btn2.style.marginTop = "30px";
+    } else {
+      hide_text_btn2.innerText = "Read more";
+      text2.style.height = "0px";
+      hide_text_btn2.style.marginTop = "10px";
+    }
   } else {
-    hide_text_btn2.innerText = "Citește mai mult";
+    if (display_text == "Citește mai mult") {
+      hide_text_btn2.innerText = "Ascunde";
+      hide_text_btn2.style.marginTop = "30px";
+    } else {
+      hide_text_btn2.innerText = "Citește mai mult";
+      text2.style.height = "0px";
+      hide_text_btn2.style.marginTop = "10px";
+    }
   }
 });
 
@@ -123,23 +176,6 @@ pers_icons.forEach((element) => {
 // FAQ SHOW ANSWER
 
 let qTitle = document.querySelectorAll(".q-title");
-let qCards = document.querySelectorAll(".q-card");
-let qAnswers = document.querySelectorAll(".q-answer");
-let qHeights = [0, 0, 0, 0, 0, 0, 0];
-
-function getHeights() {
-  qAnswers.forEach((ans, i) => {
-    qHeights[i] = ans.scrollHeight;
-  });
-
-  console.log(qHeights);
-
-  qCards.forEach((card) => {
-    card.classList.remove("show-text");
-  });
-}
-
-getHeights();
 
 qTitle.forEach((question, i) => {
   question.addEventListener("click", function () {

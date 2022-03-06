@@ -504,10 +504,10 @@ p {
   overflow: hidden;
   -webkit-transition: var(--transition-time) ease;
   transition: var(--transition-time) ease;
+  padding-top: 1.2em;
 }
 
 .show-text-inceput {
-  height: 300px;
   overflow: hidden;
 }
 
@@ -516,7 +516,8 @@ p {
   cursor: pointer;
   color: white;
   text-decoration: underline;
-  margin: 30px 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .scoalamaibuna {
@@ -737,10 +738,10 @@ p {
   overflow: hidden;
   -webkit-transition: var(--transition-time) ease;
   transition: var(--transition-time) ease;
+  margin-top: 1.2em;
 }
 
 .show-text-scopul {
-  height: 315px;
   overflow: hidden;
 }
 
@@ -749,7 +750,8 @@ p {
   cursor: pointer;
   color: white;
   text-decoration: underline;
-  margin: 30px 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .box {
@@ -1292,9 +1294,6 @@ p {
   .shape {
     background-position: center 1px;
   }
-  .show-text-inceput {
-    height: 530px;
-  }
   .center-fixed-width {
     margin-bottom: 300px;
   }
@@ -1311,9 +1310,6 @@ p {
     margin-top: 10px;
     font-size: 20px;
     margin-bottom: 50px;
-  }
-  .show-text-scopul {
-    height: 565px;
   }
   .roadmap {
     background-position: center 500px;
@@ -1559,12 +1555,6 @@ p {
   }
   .slider {
     margin-bottom: -50px;
-  }
-  .show-text-scopul {
-    height: 550px;
-  }
-  .show-text-inceput {
-    height: 485px;
   }
   .card {
     margin-bottom: 40px;
