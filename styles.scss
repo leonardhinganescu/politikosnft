@@ -476,7 +476,7 @@ p {
     top: 0;
     left: 0;
     transform: translate(-50%, -43%);
-    width: calc(100vw - calc(var(--border-size) * 3));
+    width: calc(100vw - calc(var(--border-size) * 3.5));
   }
 }
 

@@ -530,7 +530,7 @@ p {
   left: 0;
   -webkit-transform: translate(-50%, -43%);
           transform: translate(-50%, -43%);
-  width: calc(100vw - calc(var(--border-size) * 3));
+  width: calc(100vw - calc(var(--border-size) * 3.5));
 }
 
 .gallery {
