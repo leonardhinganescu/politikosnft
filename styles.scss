@@ -698,6 +698,10 @@ p {
     font-weight: 300;
     margin-bottom: 15px;
 
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
     &.done {
       background-image: url("img/icons/check.svg");
     }

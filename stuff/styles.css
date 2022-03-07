@@ -842,6 +842,10 @@ p {
   margin-bottom: 15px;
 }
 
+.roadmap-card li:last-child {
+  margin-bottom: 0px;
+}
+
 .roadmap-card li.done {
   background-image: url("img/icons/check.svg");
 }
