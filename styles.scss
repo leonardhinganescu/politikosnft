@@ -1192,7 +1192,7 @@ p {
     }
 
     .mint-btns {
-      margin-top: 20px;
+      margin-top: 80px;
       justify-content: space-between;
     }
   }
@@ -1360,6 +1360,7 @@ p {
 
   .center-fixed-width {
     margin: var(--navbar-height);
+    padding-top: 20px;
   }
 
   .gallery {
@@ -1395,6 +1396,14 @@ p {
 
     &:last-child {
       flex-direction: column-reverse;
+    }
+  }
+
+  .explicatie-toko {
+    width: 100%;
+
+    p {
+      text-align: left;
     }
   }
 
