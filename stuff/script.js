@@ -256,7 +256,7 @@ const myChart1 = new Chart(ctx, {
       {
         label: "Procentaj",
         data: [60, 18, 10, 6, 6],
-        backgroundColor: ["#57482b", "#ad2e24", "#a8714c", "#A15420", "#BD913A"],
+        backgroundColor: ["#6E1812", "#ad2e24", "#a8714c", "#A15420", "#BD913A"],
         borderWidth: 3,
         borderColor: "#1e1e1e",
         hoverOffset: 6,
@@ -295,7 +295,7 @@ const myChart2 = new Chart(cty, {
       {
         label: "Procentaj",
         data: [50, 30, 10, 10],
-        backgroundColor: ["#ad2e24", "#a8714c", "#A15420", "#BD913A"],
+        backgroundColor: ["#ad2e24", "#A15420", "#6E1812", "#BD913A"],
         borderWidth: 3,
         borderColor: "#1e1e1e",
         hoverOffset: 6,
