@@ -256,7 +256,7 @@ const myChart1 = new Chart(ctx, {
       {
         label: "Procentaj",
         data: [60, 18, 10, 6, 6],
-        backgroundColor: ["#53b788", "#74c69d", "#95d5b2", "#b7e4c7", "#d8f3dc"],
+        backgroundColor: ["#57482b", "#ad2e24", "#a8714c", "#A15420", "#BD913A"],
         borderWidth: 5,
         borderColor: "#1e1e1e",
         hoverOffset: 6,
@@ -274,11 +274,11 @@ const myChart1 = new Chart(ctx, {
         enabled: false,
       },
       datalabels: {
-        color: "#1e1e1e",
+        color: "#fae6a7",
         anchor: "center",
         align: "end",
         offset: 25,
-        font: { family: "Oswald", weight: 600, size: 15 },
+        font: { family: "Oswald", weight: 300, size: 14 },
         formatter: function (value, context) {
           return value + "%";
         },
@@ -290,12 +290,12 @@ const myChart1 = new Chart(ctx, {
 const myChart2 = new Chart(cty, {
   type: "pie",
   data: {
-    labels: ["Producție cursuri", "Hub", "Echipă + parteneriate", "Achiziții", "Marketing"],
+    labels: ["Adopție națională", "Producție cursuri", "Echipament", "Recurente"],
     datasets: [
       {
         label: "Procentaj",
-        data: [30, 20, 20, 15, 15],
-        backgroundColor: ["#f09090", "#f4978e", "#f8ad9d", "#fbc4ab", "#ffdab9"],
+        data: [50, 30, 10, 10],
+        backgroundColor: ["#ad2e24", "#a8714c", "#A15420", "#BD913A"],
         borderWidth: 5,
         borderColor: "#1e1e1e",
         hoverOffset: 6,
@@ -313,11 +313,11 @@ const myChart2 = new Chart(cty, {
         enabled: false,
       },
       datalabels: {
-        color: "#1e1e1e",
+        color: "#fae6a7",
         anchor: "center",
         align: "end",
         offset: 25,
-        font: { family: "Oswald", weight: 600, size: 15 },
+        font: { family: "Oswald", weight: 300, size: 14 },
         formatter: function (value, context) {
           return value + "%";
         },
