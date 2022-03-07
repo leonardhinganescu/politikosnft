@@ -123,6 +123,10 @@ p {
   background: var(--black-color);
 }
 
+.link {
+  color: var(--red-color);
+}
+
 //      NAVBAR
 
 .navbar {
@@ -744,7 +748,7 @@ p {
 .legend-color {
   height: 0.8em;
   width: 10px;
-  margin-right: 5px;
+  margin-right: 7px;
 
   &.legend-red {
     background-color: #ba1b2d;

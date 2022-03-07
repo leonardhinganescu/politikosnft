@@ -246,18 +246,17 @@ const myChart1 = new Chart(ctx, {
   type: "pie",
   data: {
     labels: [
+      "Dezvoltare Școalamaibună.ro",
       "Team + advisors/parteneri",
-      "Hub",
       "Airdrops Comunitate/Giveaways",
       "Marketing",
       "Parteneriate Strategice",
-      "Dezvoltare Școalamaibună.ro",
     ],
     datasets: [
       {
         label: "Procentaj",
-        data: [18, 10, 10, 6, 6, 50],
-        backgroundColor: ["#BA1B2D", "#E3A443", "#363457", "#93755B", "#387780", "#006BA6"],
+        data: [60, 18, 10, 6, 6],
+        backgroundColor: ["#53b788", "#74c69d", "#95d5b2", "#b7e4c7", "#d8f3dc"],
         borderWidth: 5,
         borderColor: "#1e1e1e",
         hoverOffset: 6,
@@ -291,12 +290,12 @@ const myChart1 = new Chart(ctx, {
 const myChart2 = new Chart(cty, {
   type: "pie",
   data: {
-    labels: ["Producție cursuri", "Achiziții", "Echipă + parteneriate", "Marketing"],
+    labels: ["Producție cursuri", "Hub", "Echipă + parteneriate", "Achiziții", "Marketing"],
     datasets: [
       {
         label: "Procentaj",
-        data: [50, 15, 20, 15],
-        backgroundColor: ["#BA1B2D", "#E3A443", "#93755B", "#387780", "#006BA6", "#363457"],
+        data: [30, 20, 20, 15, 15],
+        backgroundColor: ["#f09090", "#f4978e", "#f8ad9d", "#fbc4ab", "#ffdab9"],
         borderWidth: 5,
         borderColor: "#1e1e1e",
         hoverOffset: 6,
