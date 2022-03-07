@@ -260,6 +260,7 @@ p {
 
 .navbar-lang {
   padding: 3px 15px;
+  margin-top: -4px;
 
   a img {
     height: 15px;
@@ -394,6 +395,7 @@ p {
   color: white;
   background-color: var(--black-color);
   padding: 0.5em 1.5em;
+  cursor: pointer;
 }
 
 .join-discord-btn {
