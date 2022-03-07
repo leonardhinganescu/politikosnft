@@ -1,1 +1,1 @@
-https://textsite.github.io/testtestt/
+https://politikos.io
