@@ -1403,7 +1403,7 @@ p {
     display: none;
   }
   .mint .mint-btns {
-    margin-top: 20px;
+    margin-top: 80px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1559,6 +1559,7 @@ p {
   }
   .center-fixed-width {
     margin: var(--navbar-height);
+    padding-top: 20px;
   }
   .gallery {
     margin-top: var(--navbar-height);
@@ -1595,6 +1596,12 @@ p {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .explicatie-toko {
+    width: 100%;
+  }
+  .explicatie-toko p {
+    text-align: left;
   }
   .legend {
     margin-bottom: 20px;
