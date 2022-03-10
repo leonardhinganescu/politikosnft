@@ -105,6 +105,18 @@ p {
       flex-wrap: wrap;
 }
 
+.scoalamaibuna-link {
+  cursor: pointer;
+  color: white !important;
+  text-decoration: underline;
+}
+
+.scoalamaibuna-link-dark {
+  cursor: pointer;
+  color: var(--red-color) !important;
+  text-decoration: underline;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
