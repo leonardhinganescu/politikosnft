@@ -146,8 +146,10 @@ pers_icons.forEach((element) => {
     element.classList.add("active-pers");
 
     if (element.classList.contains("dragnea")) {
+      let i = 1;
       gallery_imgs.forEach((element2) => {
-        element2.src = "stuff/img/hide-pers.svg";
+        element2.src = "stuff/img/dragnea/Dragnea" + i.toString() + ".png";
+        i = i + 1;
       });
     } else if (element.classList.contains("vadim")) {
       gallery_imgs.forEach((element2) => {
@@ -160,8 +162,10 @@ pers_icons.forEach((element) => {
         i = i + 1;
       });
     } else if (element.classList.contains("basescu")) {
+      let i = 1;
       gallery_imgs.forEach((element2) => {
-        element2.src = "stuff/img/hide-pers.svg";
+        element2.src = "stuff/img/basescu/Basescu" + i.toString() + ".png";
+        i = i + 1;
       });
     } else if (element.classList.contains("iohannis")) {
       let i = 1;
@@ -245,13 +249,7 @@ Chart.defaults.font.weight = 300;
 const myChart1 = new Chart(ctx, {
   type: "pie",
   data: {
-    labels: [
-      "Dezvoltare Școalamaibună.ro",
-      "Team + advisors/parteneri",
-      "Airdrops Comunitate/Giveaways",
-      "Marketing",
-      "Parteneriate Strategice",
-    ],
+    labels: ["Dezvoltare Școalamaibună.ro", "Team + advisors/parteneri", "Airdrops Comunitate/Giveaways", "Marketing", "Parteneriate Strategice"],
     datasets: [
       {
         label: "Procentaj",
