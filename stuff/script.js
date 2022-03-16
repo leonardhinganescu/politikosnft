@@ -73,6 +73,7 @@ function getHeights() {
 }
 
 getHeights();
+window.onresize = getHeights;
 
 // SHOW/HIDE TEXT CUM A INCEPUT
 
@@ -152,8 +153,10 @@ pers_icons.forEach((element) => {
         i = i + 1;
       });
     } else if (element.classList.contains("vadim")) {
+      let i = 1;
       gallery_imgs.forEach((element2) => {
-        element2.src = "stuff/img/hide-pers.svg";
+        element2.src = "stuff/img/vadim/Vadim" + i.toString() + ".png";
+        i = i + 1;
       });
     } else if (element.classList.contains("ceausescu")) {
       let i = 1;

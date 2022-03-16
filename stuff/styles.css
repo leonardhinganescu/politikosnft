@@ -1453,6 +1453,12 @@ p {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  .slider {
+    margin-bottom: 0px;
+  }
+  .owl-stage-outer {
+    margin-bottom: -50px;
+  }
   .scopul {
     margin-top: 0px;
     margin-bottom: 0;
@@ -1581,6 +1587,9 @@ p {
   }
   .slider {
     margin-bottom: -50px;
+  }
+  .owl-stage-outer {
+    margin-bottom: 0px;
   }
   .card {
     margin-bottom: 40px;

@@ -1028,7 +1028,7 @@ p {
   transform: scale(1);
   opacity: 1;
   z-index: 10 !important;
-} 
+}
 
 .slider-card {
   margin: 50px 15px 29px 15px;
@@ -1246,6 +1246,14 @@ p {
     }
   }
 
+  .slider {
+    margin-bottom: 0px;
+  }
+
+  .owl-stage-outer {
+    margin-bottom: -50px;
+  }
+
   .scopul {
     margin-top: 0px;
     margin-bottom: 0;
@@ -1385,6 +1393,10 @@ p {
 
   .slider {
     margin-bottom: -50px;
+  }
+
+  .owl-stage-outer {
+    margin-bottom: 0px;
   }
 
   .card {
