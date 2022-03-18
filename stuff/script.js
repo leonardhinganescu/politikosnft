@@ -252,12 +252,12 @@ Chart.defaults.font.weight = 300;
 const myChart1 = new Chart(ctx, {
   type: "pie",
   data: {
-    labels: ["Dezvoltare Școalamaibună.ro", "Team + advisors/parteneri", "Airdrops Comunitate/Giveaways", "Marketing", "Parteneriate Strategice"],
+    labels: ["Dezvoltare Școalamaibună.ro", "Team + advisors/parteneri", "Airdrops, Marketing și Parteneriate"],
     datasets: [
       {
         label: "Procentaj",
-        data: [60, 18, 10, 6, 6],
-        backgroundColor: ["#6E1812", "#ad2e24", "#a8714c", "#A15420", "#BD913A"],
+        data: [60, 18, 22],
+        backgroundColor: ["#6E1812", "#ad2e24", "#a8714c"],
         borderWidth: 3,
         borderColor: "#1e1e1e",
         hoverOffset: 6,
