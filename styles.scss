@@ -1082,6 +1082,7 @@ p {
   z-index: 999;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   h1 {
     color: var(--black-color);
@@ -1092,15 +1093,16 @@ p {
 }
 
 .popup-btns{
-  flex-direction: column;
+  flex-direction: row;
+  padding: 50px 0;
+
+  button {
+    border: none;
+  }
 
   #close-popup {
-    border: none;
     background-color: transparent;
-    padding-top: 15px;
     cursor: pointer;
-    width: auto;
-    color:var(--black-color);
   }
 }
 
