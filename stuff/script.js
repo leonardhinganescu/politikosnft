@@ -200,9 +200,8 @@ qTitle.forEach((question, i) => {
   });
 });
 
-let sections = document.querySelectorAll("section");
-
 // COLOR NAV TEXT WHEN ON SECTION
+let sections = document.querySelectorAll("section");
 
 window.onscroll = () => {
   let current = "";
@@ -326,3 +325,16 @@ const myChart2 = new Chart(cty, {
     },
   },
 });
+
+/// POPUP
+
+popupCloseBtndocument = document.getElementById("close-popup");
+popup = document.querySelector(".mint-popup");
+bodyPopup = document.querySelector(".body-popup");
+
+popupCloseBtndocument.addEventListener("click", function () {
+  popup.style.display = "none";
+  bodyPopup.style.overflow = "unset";
+});
+
+history.scrollRestoration = 'manual';
