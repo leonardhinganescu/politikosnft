@@ -1427,6 +1427,11 @@ p {
     align-items: flex-start;
   }
 
+  .popup-btns {
+    align-items: center;
+    flex-direction: column;
+  }
+
   .join-discord-btn {
     margin-left: 0px;
     margin-top: 20px;
